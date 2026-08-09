@@ -2,7 +2,7 @@ import "./Skills.css";
 
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
-import SkillCard from "../ui/SkillCard";
+import SkillCard from "../ui/Skillcard";
 
 import skills from "../../../data/skills";
 
