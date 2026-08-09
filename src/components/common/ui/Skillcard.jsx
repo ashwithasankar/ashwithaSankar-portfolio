@@ -1,6 +1,6 @@
-import "./SkillCard.css";
+import "./Skillcard.css";
 
-const SkillCard = ({ title, description, icon: Icon }) => {
+const Skillcard = ({ title, description, icon: Icon }) => {
   return (
     <div className="skill-card">
       <div className="skill-icon">
@@ -14,4 +14,4 @@ const SkillCard = ({ title, description, icon: Icon }) => {
   );
 };
 
-export default SkillCard;
+export default Skillcard;
