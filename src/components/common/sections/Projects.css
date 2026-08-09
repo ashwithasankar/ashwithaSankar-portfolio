@@ -1,0 +1,33 @@
+.projects{
+    padding:120px 0;
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:32px;
+
+    margin-top:70px;
+
+}
+
+@media(max-width:768px){
+
+.projects{
+
+padding:90px 0;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+gap:24px;
+
+}
+
+}

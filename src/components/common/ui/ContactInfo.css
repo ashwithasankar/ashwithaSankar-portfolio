@@ -1,0 +1,21 @@
+.contact-info{
+    padding:1.5rem;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    background:var(--color-surface);
+    transition:var(--transition);
+}
+
+.contact-info:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow-md);
+}
+
+.contact-info h4{
+    margin-bottom:.5rem;
+}
+
+.contact-info a{
+    color:var(--color-primary);
+    text-decoration:none;
+}

@@ -1,0 +1,95 @@
+/* ===========================
+   BUTTON BASE
+=========================== */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 14px 32px;
+
+  border-radius: var(--radius-md);
+
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.35s ease;
+
+  cursor: pointer;
+}
+
+/* ===========================
+   PRIMARY
+=========================== */
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #111;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(200, 169, 106, 0.30);
+}
+
+/* ===========================
+   OUTLINE
+=========================== */
+
+.btn-outline {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: #111;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(200, 169, 106, 0.25);
+}
+
+/* ===========================
+   GHOST
+=========================== */
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ===========================
+   SIZES
+=========================== */
+
+.btn-sm {
+  padding: 10px 20px;
+  font-size: .9rem;
+}
+
+.btn-md {
+  padding: 14px 32px;
+}
+
+.btn-lg {
+  padding: 18px 42px;
+  font-size: 1.1rem;
+}
+
+/* ===========================
+   DISABLED
+=========================== */
+
+.btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+.btn:active {
+  transform: scale(0.98);
+}

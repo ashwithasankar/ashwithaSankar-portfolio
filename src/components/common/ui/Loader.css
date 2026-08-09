@@ -1,0 +1,55 @@
+.loader{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--color-bg);
+
+    z-index:9999;
+}
+
+.loader h1{
+
+    font-size:5rem;
+
+    color:var(--color-primary);
+
+    font-family:"Cormorant Garamond", serif;
+
+    margin:0;
+}
+
+.loader p{
+
+    margin-top:10px;
+
+    letter-spacing:6px;
+
+    color:var(--color-text);
+
+    opacity:.7;
+}
+
+.progress{
+
+    height:3px;
+
+    background:var(--color-primary);
+
+    margin:35px 0 20px;
+
+    border-radius:50px;
+
+    box-shadow:0 0 15px rgba(212,175,55,.5);
+}
+
+.loader span{
+
+    color:#888;
+
+    font-size:.9rem;
+}

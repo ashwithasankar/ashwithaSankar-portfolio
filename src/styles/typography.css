@@ -1,0 +1,82 @@
+/* ==========================================
+   TYPOGRAPHY SYSTEM
+========================================== */
+
+/* Google Fonts */
+/* Import these in index.html instead of here:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+}
+
+h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+small {
+    font-size: .875rem;
+}
+
+code,
+pre {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gold {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-text-secondary);
+}
