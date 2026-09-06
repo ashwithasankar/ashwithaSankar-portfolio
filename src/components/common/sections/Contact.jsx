@@ -26,14 +26,14 @@ const Contact = () => {
 
           <ContactInfo
             title="LinkedIn"
-            value="https://www.linkedin.com/in/ashwitha-sankar"
-            link="https://www.linkedin.com/in/ashwitha-sankar-1762a3294 "
+            value="https://www.linkedin.com/in/ashwitha-sankar-1762a3294"
+            link="https://www.linkedin.com/in/ashwitha-sankar-1762a3294"
           />
 
           <ContactInfo
             title="GitHub"
             value="https://github.com/ashwithasankar"
-            link="https://github.com/ashwithasankar  "
+            link="https://github.com/ashwithasankar"
           />
 
         </div>
