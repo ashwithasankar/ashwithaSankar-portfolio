@@ -17,14 +17,14 @@ const certificates = [
     id: 3,
     title: "Arduino",
     issuer: "Spoken Tutorial",
-    year: "2024",
+    year: "2025",
     description: "Certification covering Arduino programming and hardware fundamentals.",
   },
   {
     id: 4,
     title: "VLSI Design",
     issuer: "Internshala Training",
-    year: "2024",
+    year: "2025",
     description: "Training certification covering fundamentals of VLSI design.",
   },
 ];

@@ -15,7 +15,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./components/common/ui/Loader";
 import ScrollProgress from "./components/common/ui/ScrollProgress";
-
+import CursorSparkles from "./components/effects/CursorSparkles";
 function App() {
   const [loading, setLoading] = useState(true);
  console.log(loading);
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      
+      <CursorSparkles />
 {loading && <Loader />}
       {!loading && (
         <>

@@ -4,7 +4,8 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
-  FaGitAlt
+  FaGitAlt,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -12,8 +13,11 @@ import {
   SiMongodb,
   SiMysql,
   SiBootstrap,
-  SiPostman
+  SiGraphql,
+  SiPython,
 } from "react-icons/si";
+import { FaVial } from "react-icons/fa";
+import { FaBolt } from "react-icons/fa";
 
 const skills = [
   {
@@ -29,7 +33,7 @@ const skills = [
   {
     title: "JavaScript",
     description: "Building dynamic and interactive applications.",
-    icon: FaJsSquare ,
+    icon: FaJsSquare,
   },
   {
     title: "React",
@@ -39,37 +43,52 @@ const skills = [
   {
     title: "Node.js",
     description: "Scalable backend application development.",
-    icon: FaNodeJs ,
+    icon: FaNodeJs,
   },
   {
     title: "Express.js",
     description: "REST API development and middleware.",
-    icon: SiExpress ,
+    icon: SiExpress,
   },
   {
     title: "MongoDB",
     description: "NoSQL database design and integration.",
-    icon: SiMongodb ,
+    icon: SiMongodb,
   },
   {
     title: "MySQL",
     description: "Relational database management.",
-    icon: SiMysql ,
+    icon: SiMysql,
   },
   {
     title: "Bootstrap",
     description: "Responsive UI development.",
-    icon: SiBootstrap ,
+    icon: SiBootstrap,
   },
   {
     title: "Git & GitHub",
     description: "Version control and collaboration.",
-    icon: FaGitAlt ,
+    icon: FaGitAlt,
   },
   {
-    title: "Postman & Graph QL",
+  title: "Playwright",
+  description: "End-to-end testing and browser automation.",
+  icon: FaVial,
+},
+  {
+    title: "GraphQL",
+    description: "API querying and data integration.",
+    icon: SiGraphql,
+  },
+  {
+    title: "Thunder Client",
     description: "API testing and debugging.",
-    icon: SiPostman ,
+    icon: FaBolt,
+  },
+  {
+    title: "Python",
+    description: "Currently learning Python programming.",
+    icon: SiPython,
   },
 ];
 

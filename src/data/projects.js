@@ -43,8 +43,8 @@ const projects = [
       "JWT"
     ],
 
-    github: "#",
-    demo: "#"
+    github: "https://github.com/ashwithasankar/Expense-Tracker",
+    demo: "expense-tracker-nu-five-41.vercel.app"
   },
 
   {
@@ -65,9 +65,6 @@ const projects = [
       "ThingSpeak",
       "IoT"
     ],
-
-    github: "#",
-    demo: "#"
   },
 
   {
@@ -88,9 +85,6 @@ const projects = [
       "AI",
       "IoT"
     ],
-
-    github: "#",
-    demo: "#"
   }
 ];
 
