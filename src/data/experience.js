@@ -1,19 +1,20 @@
 const experience = [
   {
     id: 1,
-    role: "Full Stack Developer Intern",
+    role: "MERN Stack Developer Intern",
     company: "SharpAbacus Learning School Pvt. Ltd.",
-    duration: "2026 • Current",
+    duration: "2026 • Internship Completed • 3 Months",
 
     description:
-      "Contributing to a production-ready MERN application by developing new features, resolving production issues, integrating GraphQL APIs, and collaborating with the development team.",
+      "Contributed to the development and maintenance of a real-world web application using MERN stack technologies. Worked on feature development, bug fixing, API integration and testing, version control, and collaborative development workflows.",
 
     highlights: [
       "Feature Development",
-      "Production Bug Fixes",
-      "GraphQL API Integration",
-      "Team Collaboration",
-      "Git Collaboration",
+      "Bug Fixing & Debugging",
+      "API Testing & Integration",
+      "Git & GitHub Collaboration",
+      "Playwright",
+      "CI/CD Workflows",
       "Modern AI Tools"
     ],
 
@@ -22,10 +23,11 @@ const experience = [
       "Node.js",
       "Express.js",
       "MongoDB",
-      "GraphQL",
-      "openspec",
-      "Git",
-      "Svelte"
+      "openSpec",
+      "Git/GitHub",
+      "Playwright",
+      "GitHub Actions",
+      "CI/CD",
     ]
   }
 ];

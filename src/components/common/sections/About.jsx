@@ -18,13 +18,11 @@ const About = () => {
           <div className="about-content">
             <p>
               I'm <strong>Ashwitha S</strong>, a MERN Stack Developer with a
-              background in Electronics and Communication Engineering.
+              background in Electronics and Communication Engineering, passionate about building modern, responsive, and scalable web applications.
             </p>
 
             <p>
-              Currently working as a Full Stack Developer Intern, gaining
-              hands-on experience in feature development, bug fixing,
-              testing, API integration, and Git-based development.
+              I enjoy turning ideas into functional digital experiences, developing intuitive user interfaces, integrating APIs, and building backend services using modern web technologies.
             </p>
 
             <p>
@@ -46,11 +44,11 @@ const About = () => {
               </li>
 
               <li>
-                <strong>Frontend:</strong> React, JavaScript
+                <strong>Frontend:</strong> React, JavaScript, HTML, CSS, Bootstrap
               </li>
 
               <li>
-                <strong>Backend:</strong> Node.js, Express
+                <strong>Backend:</strong> Node.js, Express.js
               </li>
 
               <li>
@@ -58,7 +56,7 @@ const About = () => {
               </li>
 
               <li>
-                <strong>Interests:</strong> AI, IoT & Modern Web Technologies
+                <strong>Interests:</strong> Full-Stack Development, AI, IoT
               </li>
             </ul>
           </div>

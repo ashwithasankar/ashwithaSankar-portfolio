@@ -90,9 +90,9 @@ const toggleTheme = () => {
   {darkMode ? <FiSun /> : <FiMoon />}
 </button>
           <a
-            href="/resume.pdf"
+            href="/ASHWITHA%20Sankar%20resume%201.1%20(1).pdf"
             className="resume-btn"
-            download
+            download="Ashwitha_Sankar_Resume.pdf"
           >
             <FiDownload />
             Resume

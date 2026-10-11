@@ -80,16 +80,6 @@ const skills = [
     description: "API querying and data integration.",
     icon: SiGraphql,
   },
-  {
-    title: "Thunder Client",
-    description: "API testing and debugging.",
-    icon: FaBolt,
-  },
-  {
-    title: "Python",
-    description: "Currently learning Python programming.",
-    icon: SiPython,
-  },
 ];
 
 export default skills;

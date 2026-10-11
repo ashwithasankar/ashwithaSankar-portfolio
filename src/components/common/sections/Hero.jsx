@@ -26,10 +26,7 @@ const Hero = () => {
             </h1>
 
             <p>
-              I'm <strong>Ashwitha S</strong>, a MERN Stack Developer with
-              hands-on experience in web development and full-stack projects.
-              Currently working as a Full Stack Developer Intern while
-              exploring modern web technologies, AI, and IoT.
+              I'm <strong>Ashwitha S</strong>, a MERN Stack Developer and 2026 Electronics and Communication Engineering graduate with hands-on experience in web development and full-stack projects. I'm passionate about building modern, responsive, and scalable web applications using the MERN stack. 
             </p>
 
             <div className="hero-buttons">

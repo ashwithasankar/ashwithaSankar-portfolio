@@ -19,8 +19,8 @@ const projects = [
       "AI"
     ],
 
-    github: "#",
-    demo: "#"
+    github: "https://github.com/ashwithasankar/devmentor-ai",
+    demo: "https://devmentor-ai-eta.vercel.app/"
   },
 
   {
@@ -44,7 +44,7 @@ const projects = [
     ],
 
     github: "https://github.com/ashwithasankar/Expense-Tracker",
-    demo: "expense-tracker-nu-five-41.vercel.app"
+    demo: "https://expense-tracker-gfdv.vercel.app/dashboard"
   },
 
   {
