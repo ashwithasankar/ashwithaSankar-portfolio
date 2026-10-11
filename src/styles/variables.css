@@ -93,3 +93,38 @@
   --color-primary: #D4AF37;
   --color-border: rgba(212,175,55,.15);
 }
+/* ==========================================
+   MOBILE LIGHT THEME
+   Fix heading visibility on mobile
+========================================== */
+
+@media screen and (max-width: 768px) {
+  html:not([data-theme="dark"]) {
+    --color-bg: #F8F6F2;
+    --color-surface: #FFFFFF;
+
+    --color-text: #171717;
+    --color-text-secondary: #5F5A52;
+
+    --color-primary: #C8A96A;
+    --color-border: #E7E2D8;
+  }
+
+  html:not([data-theme="dark"]) body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  html:not([data-theme="dark"]) h1,
+  html:not([data-theme="dark"]) h2,
+  html:not([data-theme="dark"]) h3,
+  html:not([data-theme="dark"]) h4,
+  html:not([data-theme="dark"]) h5,
+  html:not([data-theme="dark"]) h6 {
+    color: #171717 !important;
+  }
+
+  html:not([data-theme="dark"]) p {
+    color: #5F5A52;
+  }
+}
