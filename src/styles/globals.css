@@ -9,18 +9,54 @@ body {
     background-color 0.3s ease,
     color 0.3s ease;
 }
-/* ===========================
+
+/* ==========================================
+   THEME-AWARE HEADING COLORS
+========================================== */
+
+/* Light theme */
+:root[data-theme="light"] h1,
+:root[data-theme="light"] h2,
+:root[data-theme="light"] h3,
+:root[data-theme="light"] h4,
+:root[data-theme="light"] h5,
+:root[data-theme="light"] h6,
+:root[data-theme="light"] .section-title,
+:root[data-theme="light"] .project-title,
+:root[data-theme="light"] .skill-title {
+  color: #171717 !important;
+}
+
+/* Light theme paragraph readability */
+:root[data-theme="light"] p {
+  color: #595959;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6,
+:root[data-theme="dark"] .section-title,
+:root[data-theme="dark"] .project-title,
+:root[data-theme="dark"] .skill-title {
+  color: #ffffff;
+}
+
+/* ==========================================
    CONTAINER
-=========================== */
+========================================== */
 
 .container {
   width: min(1280px, calc(100% - 48px));
   margin-inline: auto;
 }
 
-/* ===========================
+/* ==========================================
    SECTION
-=========================== */
+========================================== */
 
 .section {
   padding: 120px 0;
@@ -34,9 +70,9 @@ body {
   padding: 160px 0;
 }
 
-/* ===========================
+/* ==========================================
    FLEX
-=========================== */
+========================================== */
 
 .flex {
   display: flex;
@@ -54,9 +90,9 @@ body {
   align-items: center;
 }
 
-/* ===========================
+/* ==========================================
    GRID
-=========================== */
+========================================== */
 
 .grid {
   display: grid;
@@ -74,9 +110,9 @@ body {
   gap: 2rem;
 }
 
-/* ===========================
+/* ==========================================
    UTILITIES
-=========================== */
+========================================== */
 
 .hidden {
   display: none;
@@ -98,12 +134,11 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* ===========================
+/* ==========================================
    RESPONSIVE
-=========================== */
+========================================== */
 
 @media (max-width: 992px) {
-
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
@@ -115,7 +150,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .container {
     width: min(100% - 32px, 1280px);
   }
@@ -126,33 +160,7 @@ body {
 }
 
 @media (max-width: 480px) {
-
   .section {
     padding: 70px 0;
   }
-}
-/* ==========================================
-   LIGHT THEME — HEADING VISIBILITY FIX
-========================================== */
-@media (max-width: 768px) {
-[data-theme="light"] h1,
-[data-theme="light"] h2,
-[data-theme="light"] h3,
-[data-theme="light"] h4,
-[data-theme="light"] h5,
-[data-theme="light"] h6,
-[data-theme="light"] .section-title {
-  color: #171717;
-}
-
-/* Keep dark theme headings white */
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6,
-[data-theme="dark"] .section-title {
-  color: #ffffff;
-}
 }
