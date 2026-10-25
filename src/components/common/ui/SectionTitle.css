@@ -1,11 +1,13 @@
-/* ==================================
-   SECTION TITLE
-================================== */
+
+/* ==========================================
+   SECTION TITLE — THEME AWARE
+========================================== */
 
 .section-title {
   margin-bottom: 4rem;
 }
 
+/* Alignment */
 .section-title.center {
   text-align: center;
 }
@@ -14,31 +16,67 @@
   text-align: left;
 }
 
-.section-subtitle {
+/* Small gold subtitle */
+.section-title .section-subtitle {
   display: inline-block;
+
   color: var(--color-primary);
+
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: .8rem;
+
+  margin-bottom: 0.8rem;
 }
 
+/* Main heading */
 .section-title h2 {
   margin-bottom: 1rem;
   max-width: 700px;
+
+  color: var(--color-text);
+
+  transition: color 0.3s ease;
 }
 
+/* Centered heading */
 .section-title.center h2 {
   margin-inline: auto;
 }
 
+/* Description */
 .section-title p {
   max-width: 650px;
+
   color: var(--color-text-secondary);
+
   line-height: 1.8;
+
+  transition: color 0.3s ease;
 }
 
+/* Centered description */
 .section-title.center p {
   margin-inline: auto;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 768px) {
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title h2 {
+    color: var(--color-text);
+    line-height: 1.15;
+  }
+
+  .section-title p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+  }
 }

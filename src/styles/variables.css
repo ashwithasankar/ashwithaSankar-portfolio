@@ -1,130 +1,89 @@
+
+/* ==========================================
+   GLOBAL THEME VARIABLES
+========================================== */
+
+/* LIGHT THEME — DEFAULT */
 :root {
+  color-scheme: light;
 
-  /* ===========================
-      COLORS - LIGHT THEME
-  =========================== */
-
+  /* Colors */
   --color-primary: #C8A96A;
-  --color-primary-hover: #D6B87A;
+  --color-primary-hover: #B89552;
 
   --color-bg: #F8F6F2;
   --color-surface: #FFFFFF;
 
-  --color-text: #111111;
-  --color-text-secondary: #5f5a52;
+  --color-text: #171717;
+  --color-text-secondary: #595959;
 
   --color-border: #E7E2D8;
 
+  /* Status colors */
   --color-success: #3BA55C;
   --color-danger: #D64545;
-  --color-warning: #E4A11B;
+  --color-warning: #A66B00;
 
-  /* ===========================
-      SHADOWS
-  =========================== */
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
 
-  --shadow-sm: 0 2px 8px rgba(0,0,0,.05);
-  --shadow-md: 0 8px 24px rgba(0,0,0,.08);
-  --shadow-lg: 0 16px 48px rgba(0,0,0,.12);
-
-  /* ===========================
-      BORDER RADIUS
-  =========================== */
-
+  /* Border radius */
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 40px;
 
-  /* ===========================
-      SPACING
-  =========================== */
-
-  --space-xs: .5rem;
+  /* Spacing */
+  --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
   --space-xl: 6rem;
 
-  /* ===========================
-      TRANSITIONS
-  =========================== */
-
-  --transition: all .35s ease;
-
+  /* Transitions */
+  --transition: all 0.35s ease;
 }
 
-[data-theme="dark"] {
-
-  --color-primary: #C8A96A;
-  --color-primary-hover: #D6B87A;
-
-  --color-bg: #111111;
-  --color-surface: #1A1A1A;
-
-  --color-text: #F6F5F2;
-  --color-text-secondary: #BDBDBD;
-
-  --color-border: #2C2C2C;
-
-  --shadow-sm: 0 2px 8px rgba(0,0,0,.25);
-  --shadow-md: 0 8px 24px rgba(0,0,0,.35);
-  --shadow-lg: 0 16px 48px rgba(0,0,0,.45);
-
-}
-:root {
-  --color-bg: #F8F8F8;
-  --color-surface: #FFFFFF;
-  --color-text: black;
-  --color-primary: #C8A96A;
-    --color-border: #EAEAEA;
-   /* Other variables */
-  --color-text-secondary: #666666;
-  --radius-md: 16px;
-  --transition: all 0.3s ease;
-}
-
-.dark-theme {
-  /* Dark Theme */
-  --color-bg: #0A0A0A;
-  --color-surface: #141414;
-  --color-text: #F5F5F5;
-  --color-text-secondary: #B3B3B3;
-  --color-primary: #D4AF37;
-  --color-border: rgba(212,175,55,.15);
-}
 /* ==========================================
-   MOBILE LIGHT THEME
-   Fix heading visibility on mobile
+   DARK THEME
+   Supports both existing theme selectors
 ========================================== */
 
-@media screen and (max-width: 768px) {
-  html:not([data-theme="dark"]) {
-    --color-bg: #F8F6F2;
-    --color-surface: #FFFFFF;
+.dark-theme,
+[data-theme="dark"] {
+  color-scheme: dark;
 
-    --color-text: #171717;
-    --color-text-secondary: #5F5A52;
+  --color-primary: #D4AF37;
+  --color-primary-hover: #E5C45B;
 
-    --color-primary: #C8A96A;
-    --color-border: #E7E2D8;
-  }
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
 
-  html:not([data-theme="dark"]) body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-  }
+  --color-text: #F5F5F5;
+  --color-text-secondary: #BDBDBD;
 
-  html:not([data-theme="dark"]) h1,
-  html:not([data-theme="dark"]) h2,
-  html:not([data-theme="dark"]) h3,
-  html:not([data-theme="dark"]) h4,
-  html:not([data-theme="dark"]) h5,
-  html:not([data-theme="dark"]) h6 {
-    color: #171717 !important;
-  }
+  --color-border: rgba(212, 175, 55, 0.18);
 
-  html:not([data-theme="dark"]) p {
-    color: #5F5A52;
-  }
+  --color-success: #62D98A;
+  --color-danger: #FF7777;
+  --color-warning: #FFD166;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================
+   GLOBAL THEME TRANSITIONS
+========================================== */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }

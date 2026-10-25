@@ -1,33 +1,41 @@
-.projects{
-    padding:120px 0;
+
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.projects {
+  padding: 120px 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.projects-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-
-    gap:32px;
-
-    margin-top:70px;
-
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-top: 70px;
 }
 
-@media(max-width:768px){
+/* ==========================================
+   TABLET AND MOBILE
+========================================== */
 
-.projects{
+@media (max-width: 768px) {
+  .projects {
+    padding: 90px 0;
+  }
 
-padding:90px 0;
-
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
 }
 
-.projects-grid{
-
-grid-template-columns:1fr;
-
-gap:24px;
-
-}
-
+@media (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

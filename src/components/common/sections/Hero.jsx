@@ -1,20 +1,25 @@
+
 import "./Hero.css";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 
 const Hero = () => {
+  const handleViewProjects = () => {
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section id="home" className="hero">
-<div className="hero-light hero-light-main"></div>
-<div className="hero-light hero-light-secondary"></div>
-<div className="hero-glow-ring"></div>
+      <div className="hero-light hero-light-main"></div>
+      <div className="hero-light hero-light-secondary"></div>
+      <div className="hero-glow-ring"></div>
 
       <Container>
         <div className="hero-wrapper">
-
-          {/* Hero Content */}
           <div className="hero-content">
-
             <span className="hero-tag">
               MERN STACK DEVELOPER
             </span>
@@ -26,24 +31,29 @@ const Hero = () => {
             </h1>
 
             <p>
-              I'm <strong>Ashwitha S</strong>, a MERN Stack Developer and 2026 Electronics and Communication Engineering graduate with hands-on experience in web development and full-stack projects. I'm passionate about building modern, responsive, and scalable web applications using the MERN stack. 
+              I'm <strong>Ashwitha S</strong>, a MERN Stack Developer
+              and 2026 Electronics and Communication Engineering
+              graduate with hands-on experience in web development
+              and full-stack projects. I'm passionate about building
+              modern, responsive, and scalable web applications using
+              the MERN stack.
             </p>
 
             <div className="hero-buttons">
-
-              <Button>
+              <Button onClick={handleViewProjects}>
                 View Projects
               </Button>
 
-              <Button variant="outline">
+              <a
+                href="/ASHWITHA%20Sankar%20resume%201.1%20(1).pdf"
+                className="btn btn-outline"
+                download="Ashwitha_Sankar_Resume.pdf"
+              >
                 Download Resume
-              </Button>
-
+              </a>
             </div>
 
-            {/* Stats */}
             <div className="hero-stats">
-
               <div className="stat">
                 <h3>01</h3>
                 <span>Internship</span>
@@ -63,14 +73,10 @@ const Hero = () => {
                 <h3>Open</h3>
                 <span>To Work</span>
               </div>
-
             </div>
-
           </div>
-
         </div>
       </Container>
-
     </section>
   );
 };

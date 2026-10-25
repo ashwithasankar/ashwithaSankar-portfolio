@@ -1,35 +1,65 @@
-.skill-card{
-    padding:32px;
-    background:var(--color-surface);
-    border:1px solid var(--color-border);
-    border-radius:var(--radius-lg);
-    transition:var(--transition);
-    cursor:pointer;
+
+/* ==========================================
+   SKILL CARD — LIGHT AND DARK THEMES
+========================================== */
+
+.skill-card {
+  padding: 32px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  cursor: pointer;
 }
 
-.skill-card:hover{
-    transform:translateY(-8px);
-    border-color:var(--color-primary);
-    box-shadow:var(--shadow-lg);
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
 }
 
-.skill-icon{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:rgba(200,169,106,.15);
-    color:var(--color-primary);
-    margin-bottom:20px;
-    font-size:1.5rem;
+/* Skill icon */
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(200, 169, 106, 0.15);
+  color: var(--color-primary);
+
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
-.skill-card h3{
-    margin-bottom:12px;
+/* Skill headings */
+.skill-card h3 {
+  color: var(--color-text);
+  margin: 0 0 12px;
+  line-height: 1.4;
 }
 
-.skill-card p{
-    line-height:1.7;
+/* Skill descriptions */
+.skill-card p {
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skill-card {
+    padding: 24px;
+  }
 }

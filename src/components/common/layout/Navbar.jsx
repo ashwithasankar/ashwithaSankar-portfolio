@@ -12,28 +12,20 @@ import {
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-const [darkMode, setDarkMode] = useState(false);
+
+const [darkMode, setDarkMode] = useState(
+  () => localStorage.getItem("theme") === "dark"
+);
 
 useEffect(() => {
-  const savedTheme = localStorage.getItem("theme");
-
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
-    setDarkMode(true);
-  }
-}, []);
+  document.body.classList.toggle("dark-theme", darkMode);
+  localStorage.setItem("theme", darkMode ? "dark" : "light");
+}, [darkMode]);
 
 const toggleTheme = () => {
-  if (darkMode) {
-    document.body.classList.remove("dark-theme");
-    localStorage.setItem("theme", "light");
-  } else {
-    document.body.classList.add("dark-theme");
-    localStorage.setItem("theme", "dark");
-  }
-
-  setDarkMode(!darkMode);
+  setDarkMode((previousMode) => !previousMode);
 };
+
 
   useEffect(() => {
     const handleScroll = () => {
