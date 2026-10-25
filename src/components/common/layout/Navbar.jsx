@@ -1,31 +1,28 @@
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import {
-  FiMenu,
-  FiX,
-  FiDownload,
-  FiMoon,
-  FiSun,
-} from "react-icons/fi";
+import { FiMenu, FiX, FiDownload, FiMoon, FiSun } from "react-icons/fi";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-const [darkMode, setDarkMode] = useState(
-  () => localStorage.getItem("theme") === "dark"
-);
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark",
+  );
 
-useEffect(() => {
-  document.body.classList.toggle("dark-theme", darkMode);
-  localStorage.setItem("theme", darkMode ? "dark" : "light");
-}, [darkMode]);
+  useEffect(() => {
+    const theme = darkMode ? "dark" : "light";
 
-const toggleTheme = () => {
-  setDarkMode((previousMode) => !previousMode);
-};
+    document.body.classList.toggle("dark-theme", darkMode);
+    document.body.dataset.theme = theme;
 
+    localStorage.setItem("theme", theme);
+  }, [darkMode]);
+
+  const toggleTheme = () => {
+    setDarkMode((previousMode) => !previousMode);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,16 +45,10 @@ const toggleTheme = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-
-        <Link
-  to="home"
-  smooth
-  duration={600}
-  className="logo"
->
-  <span>Ashwi.</span>
-  <small>MERN Stack Developer</small>
-</Link>
+        <Link to="home" smooth duration={600} className="logo">
+          <span>Ashwi.</span>
+          <small>MERN Stack Developer</small>
+        </Link>
 
         <nav className={menuOpen ? "nav-links active" : "nav-links"}>
           {navLinks.map((item) => (
@@ -74,13 +65,9 @@ const toggleTheme = () => {
               {item.name}
             </Link>
           ))}
-          <button
-  className="theme-toggle"
-  onClick={toggleTheme}
-  type="button"
->
-  {darkMode ? <FiSun /> : <FiMoon />}
-</button>
+          <button className="theme-toggle" onClick={toggleTheme} type="button">
+            {darkMode ? <FiSun /> : <FiMoon />}
+          </button>
           <a
             href="/ASHWITHA%20Sankar%20resume%201.1%20(1).pdf"
             className="resume-btn"
@@ -91,13 +78,9 @@ const toggleTheme = () => {
           </a>
         </nav>
 
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
-
       </div>
     </header>
   );
